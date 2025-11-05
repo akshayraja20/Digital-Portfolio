@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Akshay's Portfolio — Student</title>
+    <meta name="description"
+        content="Akshay Kumar — Student frontend portfolio. Clean light/dark theme, responsive, education, skills, projects, certifications and contact." />
+
+    <!-- Font Awesome + Google Font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="nav">
+                <div class="brand">
+                    <h1>Akshay_Portfolio</h1>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="#home" class="nav-link active">Home</a></li>
+                        <li><a href="#about" class="nav-link">About</a></li>
+                        <li><a href="#skills" class="nav-link">Skills</a></li>
+                        <li><a href="#projects" class="nav-link">Projects</a></li>
+                        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="controls">
+                    <button id="theme-toggle" class="btn btn-ghost" aria-label="Toggle theme"><i id="theme-icon"
+                            class="fas fa-moon"></i></button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Top popup (fake) -->
+        <div id="top-popup" class="top-popup" role="status" aria-live="polite"></div>
+
+        <main>
+            <!-- HERO -->
+            <section id="home" class="hero">
+                <div class="card">
+                    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+                        <div style="font-weight:700;color:var(--accent)">Akshay's Portfolio</div>
+                        <div style="color:var(--muted);font-size:13px"></div>
+                    </div>
+
+                    <h1 class="hero-title">Hey — I'm <strong style="font-family:Arial, Helvetica, sans-serif;">Akshay
+                            Kumar</strong></h1>
+                    <div class="type-block">I am a <span id="type-text"></span><span id="cursor">|</span></div>
+                    <p class="hero-sub">A frontend enthusiast creating clean, responsive, and accessible web experiences
+                        - constantly exploring modern tools and frameworks.</p>
+
+                    <div style="display:flex;gap:10px;margin-top:12px;flex-wrap:wrap">
+                        <a class="btn btn-primary" href="#projects" style="text-decoration: none;">Projects</a>
+                        <a href="./Akshay Resume.pdf" class="btn btn-ghost" title="resume" download="Download-resume"
+                            style="text-decoration: none;">Download CV</a>
+                        <a class="btn btn-ghost" href="#contact" style="text-decoration: none;">Contact</a>
+                    </div>
+                </div>
+
+                <div class="card" style="text-align:center">
+                    <div class="profile">
+                        <img id="profile-img" src="/Images/Akshay.jpeg" alt="Profile">
+                    </div>
+
+                    <div class="profile-footer">
+                        <a class="social-icon" href="https://www.linkedin.com/in/akshaykumarbr02/" aria-label="LinkedIn"
+                            target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="social-icon" href="https://github.com/akshayraja20" aria-label="GitHub"
+                            target="_blank"><i class="fab fa-github"></i></a>
+                        <a class="social-icon"
+                            href="https://www.instagram.com/akshaygupta.official?igsh=MXZqYmRveGJmaDliNQ=="
+                            aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ABOUT + EDUCATION -->
+            <section id="about">
+                <h2 class="section-title">About & Education</h2>
+                <!-- <p class="section-sub">Short bio and academic background. "MCA — Currently pursuing" (no View Result for
+                    this entry).</p> -->
+
+                <div class="grid grid-2">
+                    <div class="card">
+                        <h3 style="margin-top:0">About Me</h3>
+                        <p style="color:var(--muted)">Hey, I’m Akshay - a front-end developer passionate about building
+                            fast and responsive websites.
+
+                            I’m currently pursuing Master's of Computer Application from Lovely Professional University
+                            and learning Java Script,React and Node.js to expand my full-stack development skills.</p>
+                        <ul style="color:var(--muted)">
+                            <li>HTML, CSS, JavaScript Basics</li>
+                            <li>SQL</li>
+                            <li>Performance audits and accessibility</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <h3 style="margin-top:0">Education</h3>
+                        <div style="display:flex;flex-direction:column;gap:10px;margin-top:10px">
+
+                            <div class="edu-item">
+                                <div>
+                                    <strong>MCA</strong>
+                                    <div class="edu-meta">
+                                        Currently pursuing — Lovely Professional University | 2025 - 2027
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="edu-item">
+                                <div>
+                                    <strong>BCA</strong>
+                                    <div class="edu-meta">
+                                        Purnea College Purniya | 2021 - 2024 | <b>Percentage:</b> 76%
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="edu-item">
+                                <div>
+                                    <strong>12th</strong>
+                                    <div class="edu-meta">
+                                        Bihar School Examination Board | 2018 - 2020 | <b>Percentage:</b> 74.2%
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="edu-item">
+                                <div>
+                                    <strong>10th</strong>
+                                    <div class="edu-meta">
+                                        Bihar School Examination Board | 2017 - 2018 | <b>Percentage:</b> 54.2%
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+            </section>
+
+            <!-- SKILLS -->
+            <!-- SKILLS -->
+            <section id="skills">
+                <h2 class="section-title">Skills</h2>
+                <p class="section-sub">Programming, Web, Backend, Database, Tools and Other skills.</p>
+
+                <div class="card">
+                    <!-- Programming Knowledge -->
+                    <h3 style="margin:0">Programming Knowledge</h3>
+                    <p class="skill-desc">Core languages used for algorithms and application logic.</p>
+                    <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:8px">
+                        <div class="skill-pill">
+                            <div class="skill-logo" style="background:#ffd166;color:#5b3a00">
+                                <i class="fas fa-file-code"></i>
+                            </div>
+                            <div style="flex:1">
+                                <strong>C</strong>
+                                <div class="skill-desc">Procedural programming & fundamentals</div>
+                            </div>
+                        </div>
+
+                        <div class="skill-pill">
+                            <div class="skill-logo" style="background:#7bb7ff;color:#00345b">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div style="flex:1">
+                                <strong>C++</strong>
+                                <div class="skill-desc">OOP and performance-focused coding</div>
+                            </div>
+                        </div>
+
+                        <div class="skill-pill">
+                            <div class="skill-logo" style="background:#f89820;color:white">
+                                <i class="fab fa-java"></i>
+                            </div>
+                            <div style="flex:1">
+                                <strong>Java</strong>
+                                <div class="skill-desc">Application development & OOPS</div>
+                            </div>
+                        </div>
+
+                        <div class="skill-pill">
+                            <div class="skill-logo" style="background:#3572A5;color:white">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <div style="flex:1">
+                                <strong>Python</strong>
+                                <div class="skill-desc">Scripting, automation , AI & data handling</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr style="margin:12px 0;border:none;border-top:1px solid rgba(11,27,43,0.04)">
+
+                    <!-- Web Development -->
+                    <h3 style="margin:0">Web Development</h3>
+                    <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:8px">
+                        <div class="skill-pill">
+                            <div class="skill-logo" style="background:#e34f26;color:white"><i class="fab fa-html5"></i>
+                            </div>
+                            <div style="flex:1">
+                                <strong>HTML / CSS</strong>
+                                <div class="skill-desc">Semantic markup & responsive layouts</div>
+                            </div>
+                        </div>
+
+                        <div class="skill-pill">
+                            <div class="skill-logo" style="background:#f0db4f;color:#3b2f00"><i
+                                    class="fab fa-js-square"></i></div>
+                            <div style="flex:1">
+                                <strong>JavaScript</strong>
+                                <div class="skill-desc">Client-side logic & DOM</div>
+                            </div>
+                        </div>
+
+                        <div class="skill-pill">
+                            <!-- <div class="skill-logo" style="background:#61dafb;color:#002022"><i -->
+                            <!-- class="fab fa-react"></i></div> -->
+                            <div style="flex:1">
+                                <!-- <strong>React</strong> -->
+                                <!-- <div class="skill-desc">Component-driven UIs</div> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr style="margin:12px 0;border:none;border-top:1px solid rgba(11,27,43,0.04)">
+
+                    <!-- Backend -->
+                    <h3 style="margin:0">Backend</h3>
+                    <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:8px">
+                        <div class="skill-pill">
+                            <div class="skill-logo" style="background:#8892bf;color:white"><i class="fab fa-php"></i>
+                            </div>
+                            <div style="flex:1">
+                                <strong>PHP</strong>
+                                <div class="skill-desc">Dynamic server-side pages & form handling</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr style="margin:12px 0;border:none;border-top:1px solid rgba(11,27,43,0.04)">
+
+                    <!-- Database -->
+                    <h3 style="margin:0">Database</h3>
+                    <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:8px">
+                        <div class="skill-pill">
+                            <div class="skill-logo" style="background:#00758f;color:white"><i
+                                    class="fas fa-database"></i></div>
+                            <div style="flex:1">
+                                <strong>MySQL</strong>
+                                <div class="skill-desc">Relational DB design & queries</div>
+                            </div>
+                        </div>
+
+                        <div class="skill-pill">
+                            <div class="skill-logo" style="background:#0d6efd;color:white"><i class="fas fa-table"></i>
+                            </div>
+                            <div style="flex:1">
+                                <strong>SQL</strong>
+                                <div class="skill-desc">Query writing & optimisation</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr style="margin:12px 0;border:none;border-top:1px solid rgba(11,27,43,0.04)">
+
+                    <!-- Tools -->
+                    <h3 style="margin:0">Professional & Creative Tools</h3>
+                    <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:8px">
+                        <div class="skill-pill">
+                            <div class="skill-logo" style="background:#24292e;color:white"><i class="fab fa-github"></i>
+                            </div>
+                            <div style="flex:1"><strong>GitHub</strong>
+                                <div class="skill-desc">Version control & collaboration</div>
+                            </div>
+                        </div>
+
+                        <div class="skill-pill">
+                            <div class="skill-logo" style="background:#2d2d2d;color:white"><i class="fas fa-code"></i>
+                            </div>
+                            <div style="flex:1"><strong>VS Code</strong>
+                                <div class="skill-desc">Primary code editor</div>
+                            </div>
+                        </div>
+
+                        <div class="skill-pill">
+                            <div class="skill-logo" style="background:#e3b341;color:#2b2b00"><i
+                                    class="fas fa-chart-bar"></i></div>
+                            <div style="flex:1"><strong>Power BI</strong>
+                                <div class="skill-desc">Data visualization & dashboards</div>
+                            </div>
+                        </div>
+
+                        <div class="skill-pill">
+                            <div class="skill-logo" style="background:#f04f23;color:white"><span
+                                    style="font-weight:800">Ai</span></div>
+                            <div style="flex:1"><strong>Adobe Illustrator</strong>
+                                <div class="skill-desc">Vector design & logos</div>
+                            </div>
+                        </div>
+
+                        <div class="skill-pill">
+                            <div class="skill-logo" style="background:#ff2b2b;color:white"><i class="fas fa-video"></i>
+                            </div>
+                            <div style="flex:1"><strong>Adobe Premiere Pro</strong>
+                                <div class="skill-desc">Video editing & post-production</div>
+                            </div>
+                        </div>
+
+                        <div class="skill-pill">
+                            <div class="skill-logo" style="background:#0b61a4;color:white"><i
+                                    class="fas fa-pencil-ruler"></i></div>
+                            <div style="flex:1"><strong>CorelDRAW</strong>
+                                <div class="skill-desc">Graphic layouts, print design & web designing</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr style="margin:12px 0;border:none;border-top:1px solid rgba(11,27,43,0.04)">
+
+                    <h3 style="margin:0">Other Skills</h3>
+                    <p class="muted">Data Structures & Algorithms, OOPS Concept</p>
+                </div>
+            </section>
+
+
+            <!-- PROJECTS -->
+            <section id="projects">
+                <h2 class="section-title">Projects</h2>
+                <!-- <p class="section-sub">Five projects — text only. Click View Project for details.</p> -->
+
+                <div class="card">
+                    <div style="display:flex;flex-direction:column;gap:10px">
+                        <div class="project-row">
+                            <div><strong>Food Delivery UI</strong>
+                                <div class="edu-meta">For Order Food Online and Searching resturants near by</div>
+                            </div>
+                            <div><button class="btn btn-ghost view-proj"
+                                    data-link="https://akshayraja20.github.io/food-delivery-ui/">View
+                                    Project</button></div>
+                        </div>
+                        <div class="project-row">
+                            <div><strong>Company Portal</strong>
+                                <div class="edu-meta">Employee Registration</div>
+                            </div>
+                            <div><button class="btn btn-ghost view-proj"
+                                    data-link="https://akshayraja20.github.io/Registration-Portal/">View
+                                    Project</button></div>
+                        </div>
+                        <div class="project-row">
+                            <div><strong>Sales Dashboard</strong>
+                                <div class="edu-meta">Interactive chart, map and exports</div>
+                            </div>
+                            <div><button class="btn btn-ghost view-proj"
+                                    data-link="https://akshayraja20.github.io/Sales-dashboard/">View Project
+                                </button></div>
+                        </div>
+                        <div class="project-row">
+                            <div><strong>Maitri Login Page</strong>
+                                <div class="edu-meta">Login Page</div>
+                            </div>
+                            <div><button class="btn btn-ghost view-proj"
+                                    data-link="https://akshayraja20.github.io/Maitri/">View
+                                    Project</button></div>
+                        </div>
+                        <div class="project-row">
+                            <div><strong>Calculator using VB.NET</strong>
+                                <div class="edu-meta">Perform Mathematical calculations</div>
+                            </div>
+                            <div><button class="btn btn-ghost view-proj"
+                                    data-link="https://github.com/akshayraja20/Calculator-BY-Akshay">View
+                                    Project</button></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CERTIFICATIONS -->
+            <section id="certifications">
+                <h2 class="section-title">Certifications</h2>
+                <!-- <p class="section-sub">View certificates</p> -->
+
+                <div class="grid grid-3">
+                    <div class="cert"><strong>Generative AI</strong>
+                        <div class="edu-meta">INFOSYS - 2025</div>
+                        <div style="margin-top:8px"><button class="btn btn-ghost view-cert"
+                                data-pdf="Certificates/Genarative AI Certificate.pdf">View Certificate</button></div>
+                    </div>
+                    <div class="cert"><strong>Python Foundation</strong>
+                        <div class="edu-meta">INFOSYS - 2025</div>
+                        <div style="margin-top:8px"><button class="btn btn-ghost view-cert"
+                                data-pdf="Certificates/Python Foundation Certification.pdf">View Certificate</button>
+                        </div>
+                    </div>
+                    <div class="cert"><strong>Cyber Job Simulation</strong>
+                        <div class="edu-meta">Deloitte - 2025</div>
+                        <div style="margin-top:8px"><button class="btn btn-ghost view-cert"
+                                data-pdf="Certificates/DelloiteCertification.pdf">View Certificate</button></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CONTACT -->
+            <section id="contact">
+                <h2 class="section-title">Contact</h2>
+                <p class="section-sub">Have feedback or suggestions? Feel free to drop me a message — I'd love to hear
+                    from you!
+                </p>
+
+                <div class="grid grid-2">
+                    <div class="contact-card">
+                        <form id="contact-form">
+                            <input class="input" name="name" placeholder="Please Enter Your name" required />
+                            <input class="input" type="email" name="email" placeholder="name@gmail.com" required
+                                style="margin-top:10px" />
+                            <textarea class="input" name="message" rows="6" placeholder="How can I help?"
+                                style="margin-top:10px" required></textarea>
+                            <div style="display:flex;gap:8px;margin-top:10px"><button class="btn btn-primary"
+                                    type="submit">Send Message</button><button type="button" class="btn btn-ghost"
+                                    onclick="copyEmail()">Copy Email</button></div>
+                        </form>
+                    </div>
+
+                    <div class="card"
+                        style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px">
+                        <div class="edu-meta">Reach me at</div>
+                        <h3 id="mail"><a href="mailto:akshaybirpur02@gmail.com"
+                                style="text-decoration: none; color: #93b0c4;">akshaybirpur02@gmail.com</a></h3>
+                        <p class="edu-meta">GitHub • LinkedIn • Instagram</p>
+                        <div style="display:flex;gap:8px;margin-top:8px">
+                            <a class="btn btn-ghost" href="https://github.com/akshayraja20" aria-label="GitHub"
+                                style="background-color:black;" target="_blank"><i class="fab fa-github"></i></a>
+                            <a class="btn btn-ghost" href="https://www.linkedin.com/in/akshaykumarbr02"
+                                aria-label="LinkedIn" style="background-color: rgb(75, 173, 212);" target="_blank"><i
+                                    class="fab fa-linkedin"></i></a>
+                            <a class="btn btn-ghost"
+                                href="https://www.instagram.com/akshaygupta.official?igsh=MXZqYmRveGJmaDliNQ=="
+                                aria-label="Instagram" style="background-color: rgb(181, 34, 83);" target="_blank"><i
+                                    class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <div style="text-align:center;color:var(--muted);font-size:14px;padding:10px 0">All © Reserved 2025 |
+                Akshay_Kumar | Made with HTML/CSS/JS</div>
+        </footer>
+
+        <!-- Viewer modal -->
+        <div id="viewer-modal" class="modal" role="dialog" aria-modal="true" aria-hidden="true">
+            <div class="modal-card">
+                <button class="modal-close" aria-label="Close" id="modal-close"><i class="fas fa-times"></i></button>
+                <iframe id="viewer-frame" src="" title="Viewer"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
